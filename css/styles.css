@@ -1,0 +1,428 @@
+:root {
+--blue-grey-50: #ECEFF1;
+--blue-grey-100: #CFD8DC;
+--blue-grey-200: #B0BEC5;
+--blue-grey-800: #78909C;
+--blue-grey-900: #263238;
+}
+
+/* Global Styles */
+body {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+}
+
+header, footer {
+    background-color: black;
+    color: #fff;
+}
+
+header {
+    padding: 2rem 4rem;
+}
+
+header img,
+footer img {
+    max-height: 5rem;
+    margin: 0 auto;
+}
+
+img {
+    border-radius: 8px;
+}
+
+li {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding: 1rem 0 0 0;
+}
+
+nav {
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+
+/* Utility Classes */
+.inner-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 4rem 2rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.light-grey-bg {
+    background-color: var(--blue-grey-50);
+}
+
+.med-grey-bg {
+    background-color: var(--blue-grey-100);
+}
+
+.dark-grey-bg {
+    background-color: var(--blue-grey-900);
+}
+
+.blue-grey-bg {
+    background-color: var(--blue-grey-800);
+}
+
+
+/* Typography */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2,
+blockquote > p,
+.cta p:first-child {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 3.375rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+}
+
+span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.375rem;
+}
+
+footer p,
+footer figcaption {
+    color: var(--blue-grey-200);
+    font-size: 0.75rem;
+}
+
+
+/* Home Page */
+.home-content {
+    text-align: center;
+}
+
+.about p {
+    margin-top: 1rem;
+}
+
+.about img {
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about .btn {
+    margin: 2.25rem 0 0 0;
+}
+
+.features-intro p {
+    margin-top: 2rem;
+}
+
+.features-list {
+    margin-top: 4rem;
+}
+
+.features-list div {
+    margin: 1.5rem 0;
+}
+
+.quote {
+    color: white;
+}
+
+.quote-author {
+    margin-top: 3rem;
+}
+
+.quote-author p:last-child {
+    margin-top: 1rem;
+}
+
+.architecture p {
+    margin-top: 1.5rem;
+}
+
+.architecture img {
+    margin-top: 3rem;
+}
+
+.residential,
+.commercial {
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.cta {
+    background-color: white;
+    border-radius: 8px;
+    padding: 4rem 1rem;
+}
+
+.cta p {
+    margin-top: 1rem;
+}
+
+.cta .btn {
+    margin-top: 2rem;
+}
+
+.links-container {
+    justify-content: center;
+    gap: 4.5rem;
+    margin: 3rem 0 4rem 0;
+}
+
+.links {
+    flex-direction: column;
+    font-size: 0.75rem;
+}
+
+.links a {
+    margin-top: 0.75rem;
+}
+
+footer figure {
+    padding: 0 5rem;
+}
+
+footer figcaption {
+    margin: 1.5rem auto;
+    max-width: 17rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+/*  Gallery Page */
+.gallery-about h2 {
+    text-align: center;
+}
+
+.gallery-about div:first-of-type img {
+    margin: 3rem auto 3.75rem auto;
+}
+
+.gallery-about div {
+    margin-top: 3rem;
+}
+
+.gallery-about p {
+    margin-top: 1.8rem;
+}
+
+.gallery-about figure {
+    margin: 3rem 0 2.5rem 0;
+}
+
+.gallery-about figure img {
+    margin: 0 auto;
+}
+
+.gallery-about figcaption {
+    margin-top: 1rem;
+}
+
+.gallery-quote {
+    text-align: center;
+}
+
+.cultural-hub {
+    color: white;
+}
+
+.cultural-hub p {
+    margin-top: 1rem;
+}
+
+.highlights {
+    color: white;
+}
+
+.highlights div.md-flex > img {
+    margin: 3rem auto 3rem auto;
+}
+
+.highlights figure {
+    margin-top: 3rem;
+}
+
+.highlights figcaption {
+    margin-top: 1rem;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 720px) {
+    /* Utility Classes */
+    .md-flex {
+        display: flex;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    /* Global Styles */
+    header div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    footer div.md-flex {
+        justify-content: space-between;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    /* Home Page */
+    .features-list {
+        flex-flow: row wrap;
+    }
+
+    .features-list div {
+        width: calc(50% - (1.5rem / 2));
+        text-align: left;
+        margin: 0;
+    }
+
+    .residential div,
+    .residential img,
+    .commercial div,
+    .commercial img {
+        width: 100%;
+    }
+
+    .commercial img {
+        order: -1;
+    }
+
+    .cta-container  {
+        padding: 4rem 9.5rem;
+    }
+
+    footer figure {
+        padding: 0;
+        margin: 0 9rem 0 0;
+    }
+
+    .links-container {
+        margin: 0 0 4rem 0;
+    }
+
+    footer p {
+        padding: 0 9.5rem;
+    }
+
+    /* Gallery Page */
+    .gallery-about figure {
+        order: 1;
+        width: 100%;
+        margin: 0;
+    }
+
+    .gallery-about .text-container {
+        margin-top: unset;
+    }
+
+    .gallery-about div:first-of-type img {
+        margin: unset;
+        width: 100%;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .gallery-about > div:nth-of-type(2) {
+         margin-top: 3rem;
+    }
+
+    .cultural-hub h2,
+    .highlights h2 {
+        text-align: center;
+    }
+
+    .highlights div.md-flex {
+        margin-top: 3rem;
+    }
+
+    .highlights div.md-flex > img {
+        margin: 0;
+        width: 100%;
+        flex: 1 1 50%;
+    }
+
+    .highlights .text-container {
+        flex: 1 1 50%;
+    }
+
+    .highlights li:first-of-type {
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /* Utility Classes */
+    .lg-flex {
+        display: flex;
+        column-gap: 1.5rem;
+    }
+
+    /* Home Page */
+    .features-list div {
+        width: calc((100% / 3) - (3rem / 3));
+    }
+
+    .residential.md-flex,
+    .commercial.md-flex {
+        flex-direction: column;
+    }
+
+    .residential,
+    .commercial {
+        width: 100%;
+    }
+
+
+    .commercial img {
+        order: 0;
+    }
+
+
+    /* Gallery Page */
+    .gallery-about .text-container {
+        margin-top: 3rem;
+    }
+
+    .highlights div.md-flex > img {
+        margin: 0;
+        width: 100%;
+        flex: 1 1 30%;
+    }
+
+    .highlights .text-container {
+        flex: 1 1 70%;
+    }
+}
